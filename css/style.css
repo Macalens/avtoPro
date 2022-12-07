@@ -228,6 +228,17 @@ input[type="radio"].visually-hidden {
 
     cursor: pointer;
 }
+.modal-login h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+.login-form p {
+    margin: 0;
+    margin-bottom: 10px;
+}
 .modal-close::before,
 .modal-close::after {
     content: "";
@@ -263,12 +274,32 @@ input[type="radio"].visually-hidden {
 }
 .login-form input[type="text"],
 .login-form input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 15px;
+    padding-right: 40px;
     font:inherit;
     color: #000000;
     text-transform: uppercase;
+
     margin-left: 20px;
     background-color: #f9f6f3;
     border: 2px solid #000000;
+}
+.login-icon-user {
+    background-image: url(../img/login.png);
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+.login-icon-password {
+    background-image: url(../img/parol.png);
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+.login-form .login-help {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .login-form input:focus {
     border-color: #663d15;
