@@ -12,7 +12,7 @@
     <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="#">
           <img src="img/logo22.png" width="368"
           height="183" alt="Логотип автосервис">
         </a>
@@ -110,8 +110,8 @@
           пн-пт:<br>
           сб-вс:
         </p>
-        <a class="button" href="map.html">Как проехать</a>
-        <a class="button" href="contacts.html">Обратная связь</a>
+        <a class="button contacts-button-map " href="map.html">Как проехать</a>
+       
       </section>
       
       <section class="appointment">
@@ -145,6 +145,7 @@
   </div>
     </main>
     <footer class="main-footer">
+      <div class="container">
       <p class="footer-contacts">АвтоСервис "AvtoPro"<br>
         Адрес:<br>
         Телефон:<br>
@@ -159,28 +160,28 @@
         <li><a class="social-button" href="https://twitter.com"><span class="visually-hidden">Twitter</span>
           <img src="../img/twi.png" width="35px" height="35px"/></a></li>
       </ul>
-      </div>
+    </div>
+      
       <div class="container text-center">
 
         <p class="footer-copyright">
           <b>Разработал: Max)</b>
         </p>
       </div>
+    </div>
     </footer>
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
-      <form class="login-form" accept="#" method="post">
+      <form class="login-form" action="#" method="post">
        <p>
-         <label class="visually-hidden" 
-         for="user-login">Логин</label>
+         <label class="visually-hidden" for="user-login">Логин</label>
          <input class="login-icon-user" id="user-login"
-         type="text" name="login" placeholder="email@example.com">
+          type="text" name="login" placeholder="email@example.com">
        </p>
        <p>
-         <label class="visually-hidden" 
-         for="user-password">Пароль</label>
+         <label class="visually-hidden" for="user-password">Пароль</label>
          <input class="login-icon-password" id="user-password"
-         type="password" name="password" placeholder="********">
+          type="password" name="password" placeholder="********">
        </p>
        <p class="login-help">
          <label class="login-checkbox">
@@ -201,8 +202,9 @@
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p><img src="../img/map.jpg" width="780" height="560" alt="Офис 
         компании находиться по адресу ......"></p>
-        <button class="modal-close" type="button"><span 
-          class="visually-hidden">Закрыть</span></button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    <script src = "js/popup.js"></script>
+    <script src = "js/popupMap.js"></script>
     </body>
     </html>
