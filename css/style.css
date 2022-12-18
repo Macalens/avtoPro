@@ -107,10 +107,12 @@ input[type="radio"].visually-hidden {
     background-position: 0 0;
     background-repeat: repeat;
 }
+
 .inner-page .main-header {
     margin-bottom: 50px;
     background-color: #000000;
 }
+
 .big-heading::before,
 .big-heading::after {
     content: "";
@@ -123,6 +125,7 @@ input[type="radio"].visually-hidden {
 
     background: #000000;
 }
+
 .big-heading::before {
     margin-right: 25px;
 }
@@ -428,7 +431,23 @@ margin-top: 0;
     margin-left: -230px;
     padding: 50px 80px;
 }
+.modal-map {
+    top: 50%;
+    left: 50%;
 
+    display: none;
+    width: 766px;
+    height: 561px;
+
+    margin-top: -280px;
+    margin-left: -390px;
+
+    border: 7px solid white;
+}
+
+.modal-map p {
+    margin: 0;
+}
 .modal h1 {
     font-size: 25px;
     line-height: 32px;
@@ -504,23 +523,7 @@ margin-top: 0;
 
 
 
-.modal-map {
-    top: 50%;
-    left: 50%;
 
-    display: none;
-    width: 766px;
-    height: 561px;
-
-    margin-top: -280px;
-    margin-left: -390px;
-
-    border: 7px solid white;
-}
-
-.modal-map p {
-    margin: 0;
-}
 /* .modal-map iframe {
     position: relative;
     z-index: 2;
