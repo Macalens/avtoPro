@@ -14,11 +14,13 @@ mapClose.addEventListener("click", function (evnt) {
 	mapPopup.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", function (evtn) {
-	evnt.preventDefault();
+window.addEventListener("keydown", function (evnt) {
 	if (evnt.keyCode === 27) {
+		
 		if (mapPopup.classList.contains("modal-show")) {
+			evnt.preventDefault();
 			mapPopup.classList.remove("modal-show");
+			mapPopup.classList.remove("modal-error");
 		}
 	}
 });
