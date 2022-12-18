@@ -665,8 +665,7 @@ margin-top: 0;
 background-color: #000000;
 }
 .main-navigation-wrapper .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -906,7 +905,7 @@ background-repeat: repeat-x, repeat;
 
 .social-button:hover,
 .social-button:focus {
-    background-color: #ffffff;
+    background-color: #323131;
 }
 
 .social-button:hover path,
@@ -958,4 +957,14 @@ background-repeat: repeat-x, repeat;
 .inner-page .main-header {
     margin-bottom: 50px;
     background-color: #000000;
+}
+.breadcrumbs{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+   
+    background-color: #5b5959;
 }
